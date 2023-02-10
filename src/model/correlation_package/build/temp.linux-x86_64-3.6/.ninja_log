@@ -1,0 +1,3 @@
+# ninja log v5
+60	18220	1631538148221482165	src/model/correlation_package/build/temp.linux-x86_64-3.6/correlation_cuda.o	812ead972e75116f
+60	31364	1631538161397383338	src/model/correlation_package/build/temp.linux-x86_64-3.6/correlation_cuda_kernel.o	1722065e45736a9f
