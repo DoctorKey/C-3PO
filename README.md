@@ -1,5 +1,9 @@
 # C-3PO
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/how-to-reduce-change-detection-to-semantic/change-detection-on-changesim-1)](https://paperswithcode.com/sota/change-detection-on-changesim-1?p=how-to-reduce-change-detection-to-semantic)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/how-to-reduce-change-detection-to-semantic/change-detection-on-pcd)](https://paperswithcode.com/sota/change-detection-on-pcd?p=how-to-reduce-change-detection-to-semantic)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/how-to-reduce-change-detection-to-semantic/scene-change-detection-on-vl-cmu-cd)](https://paperswithcode.com/sota/scene-change-detection-on-vl-cmu-cd?p=how-to-reduce-change-detection-to-semantic)
+
 This is the official Pytorch implementation for [How to Reduce Change Detection to Semantic Segmentation](https://arxiv.org/abs/2206.07557). 
 
 Overall, we present a new paradigm that reduces change detection to semantic segmentation which means tailoring an existing and powerful semantic segmentation network to solve change detection.
