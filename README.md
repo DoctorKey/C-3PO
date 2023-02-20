@@ -22,6 +22,11 @@ We propose a simple but effective network, called C-3PO (Combine 3 POssible chan
 
 ![MSF](imgs/MSF.jpg "MSF")
 
+## Features
+
+* This project aims at providing a benchmark of change detection. We implement and include previous methods in this project, such as `FC-EF`, `FC-Siam-diff`, `FC-Siam-cone`, `DR-TANet`, `CSCDNet`, etc. Please refer `src/model` for more details.
+* We mainly use the models in torchvision, such as `FCN`, `DeepLab`, etc. This project does not use any other 3rd libraries, such as `MMdetection`. Hence, this project provides a guidance of how to utilize the torchvision models to efficiently solve other problems.
+
 ## Requirements
 
 * Python3
@@ -68,6 +73,10 @@ We provide all shells to reproduce the results in our paper. Please check files 
 source exp/sota/resnet18_mtf_id_msf4_deeplabv3_cmu.sh
 train
 ```
+
+## Results
+
+
 
 ## Visualization
 
