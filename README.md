@@ -24,8 +24,8 @@ We propose a simple but effective network, called C-3PO (Combine 3 POssible chan
 
 ## Features
 
-* This project aims at providing a benchmark of change detection. We implement and include previous methods in this project, such as `FC-EF`, `FC-Siam-diff`, `FC-Siam-cone`, `DR-TANet`, `CSCDNet`, etc. Please refer `src/model` for more details.
-* We mainly use the models in torchvision, such as `FCN`, `DeepLab`, etc. This project does not use any other 3rd libraries, such as `MMdetection`. Hence, this project provides a guidance of how to utilize the torchvision models to efficiently solve other problems.
+* This project aims at providing a benchmark of change detection. We implement and include several previous methods in this project, such as `FC-EF`, `FC-Siam-diff`, `FC-Siam-cone`, `DR-TANet`, `CSCDNet`, etc. Please check `src/model` for more details.
+* We mainly use the models in torchvision, such as `FCN`, `DeepLab`, etc. This project does not use any other 3rd libraries, such as [mmsegmentation](https://github.com/open-mmlab/mmsegmentation). Hence, this project provides a guidance of how to utilize the torchvision models to efficiently solve other problems.
 
 ## Requirements
 
@@ -76,11 +76,15 @@ train
 
 ## Results
 
+![VL-CMU-CD](imgs/CMU.jpg "CMU")
 
+![PCD](imgs/PCD.jpg "PCD")
+
+![ChangeSim](imgs/ChangeSim.jpg "ChangeSim")
 
 ## Visualization
 
-![CMU](imgs/CMU.png "CMU")
+![CMU](imgs/CMU_visual.png "CMU")
 
 ## Citation
 
