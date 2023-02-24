@@ -3,7 +3,7 @@ import torchvision
 import torch.nn as nn
 from torchvision.models import resnet 
 
-from model.Backbone import Backbone
+from model.backbone_base import Backbone
 
 
 class ResNet(Backbone):
