@@ -2,7 +2,7 @@ import torch
 import torchvision
 import torch.nn as nn
 
-from model.Backbone import Backbone
+from model.backbone_base import Backbone
 
 
 class VGG(Backbone):
