@@ -39,6 +39,8 @@ We propose a simple but effective network, called C-3PO (Combine 3 POssible chan
 
 If you want to use `CSCDNet` in our project, please follow their [instructions](https://github.com/kensakurada/sscdnet) to install the `correlation` module.
 
+If you do not want to use other models, please checkout the `mini` branch.
+
 ## Prepare the dataset
 
 There are three datasets needed in this projects:
@@ -73,6 +75,14 @@ We provide all shells to reproduce the results in our paper. Please check files 
 source exp/sota/resnet18_mtf_id_msf4_deeplabv3_cmu.sh
 train
 ```
+
+### Pretrained Weights
+
+Please download the weights by yourself. Check the `test` command in the shell, and modify `--resume` according to your download path. Then you can run the `test` command to evaluate the performance.
+
+| Shell | Weights | Model | Dataset | Performance |
+| :---: | :---: | :---: | :---: | :---: |
+| [resnet18_mtf_id_msf4_deeplabv3_cmu](exp/sota/resnet18_mtf_id_msf4_deeplabv3_cmu.sh) | [resnet18_id_4_deeplabv3_VL_CMU_CD.pth](https://huggingface.co/Flourish/C-3PO/blob/main/resnet18_id_4_deeplabv3_VL_CMU_CD.pth) | resnet18_mtf_msf_deeplabv3 | VL-CMU-CD | 79 |
 
 ## Results
 
