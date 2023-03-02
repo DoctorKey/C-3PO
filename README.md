@@ -24,7 +24,7 @@ We propose a simple but effective network, called C-3PO (Combine 3 POssible chan
 
 ## Features
 
-* This project aims at providing a benchmark of change detection. We implement and include several previous methods in this project, such as `FC-EF`, `FC-Siam-diff`, `FC-Siam-cone`, `DR-TANet`, `CSCDNet`, etc. Please check `src/model` for more details.
+* This project aims at providing a benchmark of change detection.
 * We mainly use the models in torchvision, such as `FCN`, `DeepLab`, etc. This project does not use any other 3rd libraries, such as [mmsegmentation](https://github.com/open-mmlab/mmsegmentation). Hence, this project provides a guidance of how to utilize the torchvision models to efficiently solve other problems.
 
 ## Requirements
@@ -32,12 +32,8 @@ We propose a simple but effective network, called C-3PO (Combine 3 POssible chan
 * Python3
 * PyTorch
 * Torchvision
-* pycocotools
-* timm
 
-`Python3`, `Pytorch` and `Torchvision` are necessary. `pycocotools` is required for the `COCO` dataset. `timm` is required for the `Swin Transformer` backbone. 
-
-If you want to use `CSCDNet` in our project, please follow their [instructions](https://github.com/kensakurada/sscdnet) to install the `correlation` module.
+`Python3`, `Pytorch` and `Torchvision` are necessary. 
 
 ## Prepare the dataset
 

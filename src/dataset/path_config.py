@@ -1,20 +1,6 @@
 import os
 
 def get_dataset_path(name):
-    if name == 'coco':
-        """
-        ── annotations
-        │   ├── instances_train2017.json
-        │   ├── instances_val2017.json
-        ├── test2017
-        │   └── *.jpg
-        ├── train2017
-        │   └── *.jpg
-        └── val2017
-            └── *.jpg
-
-        """
-        return '/data_path/coco_2017'
 
     if name == 'PCD_raw':
         """
@@ -68,7 +54,8 @@ def get_dataset_path(name):
             ├── t0
             └── t1
         """
-        return '/data_path/VL-CMU-CD-binary255'
+        # return '/data_path/VL-CMU-CD-binary255'
+        return '/opt/Dataset/VL-CMU-CD/VL-CMU-CD-binary255'
 
     if name == 'CMU_raw':
         """
@@ -76,7 +63,8 @@ def get_dataset_path(name):
         ├── test
         └── train
         """
-        return '/data_path/VL-CMU-CD'
+        # return '/data_path/VL-CMU-CD'
+        return '/opt/Dataset/VL-CMU-CD'
 
     if name == 'ChangeSim':
         """

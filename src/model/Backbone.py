@@ -13,7 +13,6 @@ from typing import List
 from model.resnet import ResNet
 from model.vgg import VGG
 from model.mobilenetv2 import MobileNetV2
-from model.swin_transformer import SwinTransformer
 
 def get_backbone(backbone_name):
     if 'resnet' in backbone_name:
@@ -22,12 +21,6 @@ def get_backbone(backbone_name):
         return VGG(backbone_name)
     elif 'mobilenetv2' in backbone_name:
         return MobileNetV2()
-    elif 'swin_T' in backbone_name:
-        model = SwinTransformer()
-        pretrain = os.path.join(os.environ["TORCH_HOME"], 'models/swin/swin_tiny_patch4_window7_224.pth')
-        sd = torch.load(pretrain)['model']
-        model.load_state_dict(sd, strict=False)
-        return model
 
 def get_channels(backbone_name):
     if 'resnet' in backbone_name:
