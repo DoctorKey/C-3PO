@@ -83,6 +83,7 @@ Please download the weights by yourself. Check the `test` command in the shell, 
 | Shell | Weights | Model | Dataset | Performance |
 | :---: | :---: | :---: | :---: | :---: |
 | [resnet18_mtf_id_msf4_deeplabv3_cmu](exp/sota/resnet18_mtf_id_msf4_deeplabv3_cmu.sh) | [resnet18_id_4_deeplabv3_VL_CMU_CD.pth](https://huggingface.co/Flourish/C-3PO/blob/main/resnet18_id_4_deeplabv3_VL_CMU_CD.pth) | resnet18_mtf_msf_deeplabv3 | VL-CMU-CD | 79 |
+| [vgg16bn_mtf_id_msf4_deeplabv3_cmu](exp/sota/vgg16bn_mtf_id_msf4_deeplabv3_cmu.sh) | [vgg16bn_id_4_deeplabv3_VL_CMU_CD.pth](https://huggingface.co/Flourish/C-3PO/blob/main/vgg16bn_id_4_deeplabv3_VL_CMU_CD.pth) | vgg16bn_mtf_msf_deeplabv3 | VL-CMU-CD | 80 |
 
 ## Results
 
