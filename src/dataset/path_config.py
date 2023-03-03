@@ -21,7 +21,8 @@ def get_dataset_path(name):
             └── t1
                 └── *.jpg
         """
-        return '/data_path/pcd'
+        # return '/data_path/pcd'
+        return '/opt/Dataset/pcd/pcd'
 
     if name == 'PCD_CV':
         """
@@ -41,7 +42,8 @@ def get_dataset_path(name):
         ├── set3
         └── set4
         """
-        return '/data_path/pcd_5cv'
+        # return '/data_path/pcd_5cv'
+        return '/opt/Dataset/pcd/pcd_5cv'
 
     if name == 'CMU_binary':
         """
