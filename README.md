@@ -86,6 +86,8 @@ Please download the weights by yourself. Check the `test` command in the shell, 
 | [vgg16bn_mtf_id_msf4_deeplabv3_cmu](exp/sota/vgg16bn_mtf_id_msf4_deeplabv3_cmu.sh) | [vgg16bn_id_4_deeplabv3_VL_CMU_CD.pth](https://huggingface.co/Flourish/C-3PO/blob/main/vgg16bn_id_4_deeplabv3_VL_CMU_CD.pth) | vgg16bn_mtf_msf_deeplabv3 | VL-CMU-CD | 80 |
 | [resnet18_mtf_iade_msf4_deeplabv3_pcd](exp/sota/resnet18_mtf_iade_msf4_deeplabv3_pcd.sh) | [resnet18_iade_4_deeplabv3_PCD.pth](https://huggingface.co/Flourish/C-3PO/blob/main/resnet18_iade_4_deeplabv3_PCD.pth) | resnet18_mtf_msf_deeplabv3 | GSV/TSUNAMI set 0 | 80/88 |
 | [vgg16bn_mtf_iade_msf4_deeplabv3_pcd](exp/sota/vgg16bn_mtf_iade_msf4_deeplabv3_pcd.sh) | [vgg16bn_iade_4_deeplabv3_PCD.pth](https://huggingface.co/Flourish/C-3PO/blob/main/vgg16bn_iade_4_deeplabv3_PCD.pth) | vgg16bn_mtf_msf_deeplabv3 | GSV/TSUNAMI set 0 | 79/88 |
+| [resnet18_mtf_iade_msf4_deeplabv3_changesim_binary](exp/changesim/imagenet_resnet18_mtf_iade_msf4_deeplabv3_changesim_binary.sh) | [resnet18_iade_4_deeplabv3_ChangeSim_Binary.pth](https://huggingface.co/Flourish/C-3PO/blob/main/resnet18_iade_4_deeplabv3_ChangeSim_Binary.pth) | resnet18_mtf_msf_deeplabv3 | ChangeSim Binary | 60 |
+
 
 Note that the PCD dataset has 5 subsets, and we release our models for the first subset. Please train models on other subsets by yourself if you want to obtain them.
 
