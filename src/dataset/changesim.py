@@ -86,7 +86,7 @@ class SegHelper:
         classes_str = [self.idx2name[idx] for idx in classes_idx]
         return classes_idx, classes_str
 
-    def colormap2classmap(self,seg_array):
+    def colormap2classmap(self, seg_array):
         seg_array_flattened = torch.LongTensor(seg_array.reshape(-1,3))
         seg_map_class_flattened = torch.zeros((seg_array.shape[0],seg_array.shape[1],1)).view(-1,1)
         for color, cls in self.color2idx.items():
@@ -197,7 +197,8 @@ def get_ChangeSim(args, train=True, num_class=2):
         seg_class_num = 5
     else:
         seg_class_num = 32
-    seg = SegHelper(idx2color_path=os.path.join(raw_root, 'idx2color.txt'), num_class=seg_class_num)
+    # seg = SegHelper(idx2color_path=os.path.join(raw_root, 'idx2color.txt'), num_class=seg_class_num)
+    seg = SegHelper(idx2color_path=os.path.join('./src/dataset/idx2color.txt'), num_class=seg_class_num)
 
     mean=(0.485, 0.456, 0.406)
     std=(0.229, 0.224, 0.225)
@@ -216,11 +217,11 @@ def get_ChangeSim(args, train=True, num_class=2):
         augs.append(T.Normalize(mean=mean, std=std))
         augs.append(T.ConcatImages())
     elif num_class == 5:
-        augs.append(T.ToTensor(seg.colormap2classmap))
+        augs.append(T.PILToTensor(seg.colormap2classmap))
         augs.append(T.Normalize(mean=mean, std=std))
         augs.append(T.ConcatImages())
     else:
-        augs.append(T.ToTensor(seg.colormap2classmap))
+        augs.append(T.PILToTensor(seg.colormap2classmap))
         augs.append(T.Normalize(mean=mean, std=std))
 
     transforms = T.Compose(augs)

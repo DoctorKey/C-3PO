@@ -80,18 +80,11 @@ def get_dataset_path(name):
 
     if name == 'ChangeSim':
         """
-        ├── dark_test_list.txt
-        ├── dust_test_list.txt
-        ├── idx2color.txt
         ├── Query
         │   ├── Query_Seq_Test
         │   └── Query_Seq_Train
-        ├── Reference
-        │   ├── Ref_Seq_Test
-        │   └── Ref_Seq_Train
-        ├── test_list.txt
-        ├── test_split.txt
-        ├── train_list.txt
-        └── train_split.txt
+        └── Reference
+            ├── Ref_Seq_Test
+            └── Ref_Seq_Train
         """
         return '/data_path/ChangeSim'

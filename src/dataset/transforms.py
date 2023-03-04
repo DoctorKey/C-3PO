@@ -153,10 +153,15 @@ class ToTensor(object):
         return image, target
 
 class PILToTensor:
+    def __init__(self, target_transform=None):
+        self.target_transform = target_transform
+
     def __call__(self, image, target):
         #image = F.pil_to_tensor(image)
         image = proc_image(image, F.to_tensor)
         target = torch.as_tensor(np.array(target).copy(), dtype=torch.int64)
+        if self.target_transform:
+            target = self.target_transform(target)
         return image, target
 
 class ConvertImageDtype:
