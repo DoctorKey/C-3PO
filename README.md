@@ -53,7 +53,7 @@ Please refer to `src/dataset/path_config.py` to understand the folder structure 
 
 Please follow this [site](https://kensakurada.github.io/pcd_dataset.html) to download the PCD dataset. You may need to send e-mails to Takayuki Okatani.
 
-You can download VL-CMU-CD by this [link](https://drive.google.com/file/d/0B-IG2NONFdciOWY5QkQ3OUgwejQ/view?resourcekey=0-rEzCjPFmDFjt4UMWamV4Eg).
+For VL-CMU-CD, you can check this [issue](https://github.com/gmayday1997/SceneChangeDet/issues/7). Or you can download `VL-CMU-CD-binary255` at [here](https://huggingface.co/datasets/Flourish/VL-CMU-CD/blob/main/VL-CMU-CD-binary255.zip). Overall, I am not sure if I can release this dataset. If there is a policy problem, please contact me. And I will delete it.  
 
 Please follow this [page](https://github.com/SAMMiCA/ChangeSim) to prepare the ChangeSim dataset.
 
